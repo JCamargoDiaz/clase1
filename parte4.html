@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte4</title>
+</head>
+<body>
+    <script>
+        let nombreUsuario = prompt("¿Cual es tu nombre?");
+        let edadUsuario = parseInt(prompt("¿Cual es tu edad?"));
+        let esEstudiante = prompt("¿Eres estudiante?(si/no)").toLowerCase() === "si";
+
+        let mensaje = `Hola,${nombreUsuario}`;
+        mensaje += `Tienes ${edadUsuario} años.`;
+
+        //estructura de control
+        if (edadUsuario >= 18) {
+        mensaje += " Eres mayor de edad.";
+        } else {
+        mensaje += " No eres mayor de edad.";
+        }
+        if (esEstudiante) {
+        mensaje += " Tienes derecho a descuento por ser estudiante.";
+        } else {
+        mensaje += " No tienes derecho a descuento por ser estudiante.";
+        }
+
+        console.log(mensaje);
+    </script>
+</body>
+</html>

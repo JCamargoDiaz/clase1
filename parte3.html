@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte3</title>
+</head>
+<body>
+    <script>
+        //USO DE OPERADORES LOGICOS Y CONCATENACION DE STRING
+
+        //declaracion de variables booleanas
+        let esMayorDeEdad = true;
+        let tieneLicencia = false;
+
+        //aplicacion de operadores
+        let puedeConducir = esMayorDeEdad && tieneLicencia;
+        let noPuedeConducir = esMayorDeEdad || tieneLicencia;
+
+        //mensaje de bienvenida utilizando concatenación de strings y template literals.
+        let nombre = "Anibal velasquez";
+        let edad = 30;
+        let mensaje = `Hola, ${nombre} tienes ${edad} años y `;
+        mensaje += puedeConducir ? "puedes conducir." : "no puedes conducir.";
+        console.log(mensaje);
+    </script>
+</body>
+</html>
